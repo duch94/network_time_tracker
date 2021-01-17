@@ -19,7 +19,7 @@ python backend.py
 ```
 
 ## How to run web-interface
-To run web-app you need to get dependencies with poetry 
+To run web-app you need to start uvicorn web-server like this
 ```bash
 uvicorn web_app:main --workers 1
 ```
