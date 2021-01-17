@@ -12,11 +12,14 @@ You need to get dependencies with poetry
 poetry install
 ```
 
-## How to run backend
-And then run backend.py with python
+## How to use backend
+To run backend.py with python use command
 ```bash
 python backend.py
 ```
+Data is stored at file `data.piclke` which is stored in directory where you start this app. After application restart new 
+data will be appended to old data, so, if you want to start over writing statistics - just delete, rename or move this 
+file somewhere.
 
 ## How to run web-interface
 To run web-app you need to start uvicorn web-server like this
