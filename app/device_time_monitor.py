@@ -9,11 +9,12 @@ from models.device import Device
 
 
 class DeviceTimeMonitor:
+    persistance_filename = 'data.pickle'
 
     def __init__(self):
         self.update_time = 15  # secs
         self.devices_time_online = {}
-        self.persistance_filename = 'data.pickle'
+
         if os.path.exists(self.persistance_filename):
             self.load_data()
 
